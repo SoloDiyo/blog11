@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Story</title>
+    <style>
+        body {
+            background-color: #2f2f2f;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #cccccc;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #a8a8a8;
+            font-style: italic;
+        }
+
+        .quote {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #3e3e3e;
+            border-left: 5px solid #555555;
+            color: #cccccc;
+            font-style: italic;
+        }
+
+        form {
+            background-color: #3e3e3e;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 5px;
+        }
+
+        form label {
+            color: #cccccc;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 3px;
+            background-color: #555555;
+            color: #e0e0e0;
+        }
+
+        form input[type="submit"] {
+            background-color: #4e4e4e;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #6e6e6e;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #3e3e3e;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="POST">
+            <h2>Write the Story or Share Your Thoughts</h2>
+            
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label>Your Story Heading:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="story">Your Story:</label>
+            <textarea id="story" name="story" rows="6" placeholder="Write the story here..." required></textarea>
+
+            <input type="submit" value="Submit Your Story">
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 DSOGgames
+    </footer>
+</body>
+</html>
